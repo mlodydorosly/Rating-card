@@ -76,16 +76,15 @@ body{
     cursor: pointer;
 }
 
-.rating .clicked{
-    background-color: var(--Orange);
-    color: white;
-}
-
-.rating .button-rating:hover {
+.rating .button-rating:hover, .rating .button-rating:active {
     background-color: var(--Medium-Grey);
     color: white;
 }
 
+.rating #clicked{
+    background-color: var(--Orange);
+    color: white;
+}
 
 #card-check-button{
     width: 100%;

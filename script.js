@@ -7,12 +7,12 @@ let selected = -1;
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function (event) {
         if (selected >= 0) {
-            buttons[selected].classList.remove("clicked");
+            buttons[selected].removeAttribute("id");
         }
     });
 
     buttons[i].addEventListener('click', function (event) {
-        buttons[i].classList.add("clicked");
+        buttons[i].setAttribute("id","clicked");
         selected = i;
     });
 }
